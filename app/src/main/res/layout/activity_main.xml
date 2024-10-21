@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="5dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/publishMessage"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="21dp"
+        android:text="Publish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textMessage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subscribe"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="Subscribe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subscribeTopic"
+        app:layout_constraintTop_toBottomOf="@+id/publishMessage" />
+
+    <EditText
+        android:id="@+id/textMessage"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Message text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/publishMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/subscribeTopic"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Subscribe topic"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/subscribe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
